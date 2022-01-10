@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.thumbnail-container {
+    position: relative;
+    width: 15%;
+    padding: 0.625rem 0.3rem;
+    cursor: pointer; 
+}
+
+.duration {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    color: white;
+    background-color: #726161;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.625rem;
+}
+
+img{
+    width: 100%;
+   border-radius: 0.9rem
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes .heart {
+    color: red
+}
+
+@media only screen and (max-width: 600px) {
+    .thumbnail-container { 
+        width: 100%; 
+        padding: 0.875rem 0.3rem;      
+    }
+    .duration {
+        top: 1.8rem;
+    }
+  }
